@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istoria Mineritului în Brad - Patrimoniul Industrial</title>
+    <meta name="description" content="Site dedicat istoriei și patrimoniului industrial al mineritului din zona Brad, județul Hunedoara">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>★</text></svg>">
+</head>
+<body>
+    <!-- Background design elements -->
+    <div class="bg-element bg-element-top-right"></div>
+    <div class="bg-element bg-element-bottom-left"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-bg-pattern"></div>
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <div class="brand-icon">
+                        <div class="brand-icon-inner">
+                            <span>★</span>
+                        </div>
+                    </div>
+                    <h1 class="brand-title" data-i18n="site-title">Istoria Mineritului în Brad</h1>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Deschide meniul">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+
+                <!-- Desktop navigation -->
+                <div class="nav-links desktop-nav">
+                    <a href="index.html" class="nav-link active" data-i18n="home">Acasă</a>
+                    <a href="istorie.html" class="nav-link" data-i18n="history">Istorie</a>
+                    <a href="galerie.html" class="nav-link" data-i18n="gallery">Galerie</a>
+                    <div class="settings-dropdown">
+                        <button class="settings-btn" id="settingsBtn" data-i18n="options">Opțiuni</button>
+                        <div class="dropdown-content" id="dropdownContent">
+                            <div class="dropdown-header" data-i18n="settings">Setări</div>
+                            <div class="dropdown-separator"></div>
+                            <div class="dropdown-item">
+                                <div class="dropdown-label">
+                                    <span>🌐</span>
+                                    <span data-i18n="language">Limbă</span>: <span id="currentLang">Română</span>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" id="languageSwitch">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="dropdown-separator"></div>
+                            <div class="dropdown-item">
+                                <div class="dropdown-label">
+                                    <span id="themeIcon">☀️</span>
+                                    <span data-i18n="theme">Temă</span>: <span id="currentTheme">Luminoasă</span>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" id="themeSwitch">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile navigation -->
+                <div class="mobile-nav" id="mobileNav">
+                    <a href="index.html" class="nav-link active" data-i18n="home">Acasă</a>
+                    <a href="istorie.html" class="nav-link" data-i18n="history">Istorie</a>
+                    <a href="galerie.html" class="nav-link" data-i18n="gallery">Galerie</a>
+                    <div class="mobile-settings">
+                        <div class="mobile-settings-title" data-i18n="settings">Setări</div>
+                        <div class="mobile-setting-item">
+                            <span data-i18n="language">Limbă</span>: <span id="mobileLang">Română</span>
+                            <label class="switch">
+                                <input type="checkbox" id="mobileLangSwitch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="mobile-setting-item">
+                            <span data-i18n="theme">Temă</span>: <span id="mobileTheme">Luminoasă</span>
+                            <label class="switch">
+                                <input type="checkbox" id="mobileThemeSwitch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg-elements">
+                <div class="hero-bg-circle hero-bg-circle-1"></div>
+                <div class="hero-bg-circle hero-bg-circle-2"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <span data-i18n="period-1947-1989">1947-1989</span>
+                        </div>
+                        <h1 class="hero-title" data-i18n="mining-beginnings">Istoria Mineritului în Brad</h1>
+                        <p class="hero-description" data-i18n="homepage-description">
+                            Explorați istoria și patrimoniul industrial al mineritului din zona Brad, un capitol important din dezvoltarea economică și socială a regiunii de-a lungul timpului.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="istorie.html" class="btn btn-primary">
+                                <span data-i18n="discover-history">Descoperă Istoria</span>
+                                <span class="btn-icon">→</span>
+                            </a>
+                            <a href="galerie.html" class="btn btn-outline" data-i18n="view-gallery">Vezi Galeria</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-image-overlay"></div>
+                        <img src="images/istoria-mineritului-brad-poster.webp" alt="Istoria Mineritului în Brad" loading="eager">
+                        <div class="hero-image-decoration">
+                            <span>★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Aspects Section -->
+        <section class="aspects">
+            <div class="section-decorations">
+                <div class="section-line section-line-top"></div>
+                <div class="section-line section-line-bottom"></div>
+            </div>
+            <div class="container">
+                <h2 class="section-title">
+                    <span data-i18n="important-aspects">Aspecte Importante</span>
+                </h2>
+                <div class="aspects-grid">
+                    <div class="aspect-card">
+                        <div class="aspect-card-decoration"></div>
+                        <h3 data-i18n="mining-industry">Industria Minieră</h3>
+                        <p data-i18n="mining-industry-description">
+                            Exploatarea minieră a reprezentat un pilon economic esențial în perioada comunistă, Brad fiind cunoscut pentru minele sale de aur și alte resurse.
+                        </p>
+                        <a href="istorie.html#industria" class="aspect-link">
+                            <span data-i18n="learn-more">Află mai multe</span>
+                            <span class="aspect-link-icon">→</span>
+                        </a>
+                    </div>
+                    <div class="aspect-card">
+                        <div class="aspect-card-decoration"></div>
+                        <h3 data-i18n="daily-life">Viața Cotidiană</h3>
+                        <p data-i18n="daily-life-description">
+                            Descoperiți cum era viața de zi cu zi pentru locuitorii din Brad în timpul regimului comunist, de la cozile pentru alimente la activitățile culturale.
+                        </p>
+                        <a href="istorie.html#viata-cotidiana" class="aspect-link">
+                            <span data-i18n="learn-more">Află mai multe</span>
+                            <span class="aspect-link-icon">→</span>
+                        </a>
+                    </div>
+                    <div class="aspect-card">
+                        <div class="aspect-card-decoration"></div>
+                        <h3 data-i18n="socialist-architecture">Arhitectura Socialistă</h3>
+                        <p data-i18n="socialist-architecture-description">
+                            Blocurile de locuințe, clădirile administrative și alte structuri construite în perioada comunistă care au schimbat peisajul urban al Bradului.
+                        </p>
+                        <a href="istorie.html#arhitectura" class="aspect-link">
+                            <span data-i18n="learn-more">Află mai multe</span>
+                            <span class="aspect-link-icon">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+            <div class="timeline-bg-elements">
+                <div class="timeline-bg-circle timeline-bg-circle-1"></div>
+                <div class="timeline-bg-circle timeline-bg-circle-2"></div>
+                <div class="timeline-bg-circle timeline-bg-circle-3"></div>
+            </div>
+            <div class="container">
+                <div class="timeline-content">
+                    <div class="timeline-text">
+                        <h2 data-i18n="historical-timeline">Cronologie Istorică</h2>
+                        <p data-i18n="timeline-description">
+                            Perioada comunistă în România a început oficial în 1947 și s-a încheiat în 1989. În zona Brad, această perioadă a fost marcată de industrializare intensă, transformări sociale și economice profunde.
+                        </p>
+                        <div class="timeline-meta">
+                            <div class="timeline-meta-item">
+                                <span class="timeline-icon">🕒</span>
+                                <span data-i18n="period-1947-1989">1947-1989</span>
+                            </div>
+                            <div class="timeline-meta-item">
+                                <span class="timeline-icon">📍</span>
+                                <span data-i18n="brad-hunedoara">Brad, Județul Hunedoara</span>
+                            </div>
+                        </div>
+                        <a href="istorie.html#cronologie" class="btn btn-primary" data-i18n="view-complete-timeline">
+                            Vezi Cronologia Completă
+                        </a>
+                    </div>
+                    <div class="timeline-image">
+                        <div class="timeline-image-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=500&h=300&fit=crop" alt="Imagine istorică din Brad">
+                        <div class="timeline-image-badge">
+                            <span data-i18n="may-1-1975">1 Mai, 1975</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg-pattern"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <span class="footer-icon">
+                            <span>★</span>
+                        </span>
+                        <span data-i18n="mining-beginnings">Istoria Mineritului în Brad</span>
+                    </h3>
+                    <p class="footer-description" data-i18n="footer-description">
+                        Un proiect dedicat păstrării și promovării istoriei mineritului și patrimoniului industrial din zona Brad, județul Hunedoara.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-subtitle" data-i18n="quick-navigation">Navigare Rapidă</h3>
+                    <div class="footer-links">
+                        <a href="index.html" data-i18n="home">Acasă</a>
+                        <a href="istorie.html" data-i18n="history">Istorie</a>
+                        <a href="galerie.html" data-i18n="gallery">Galerie</a>
+                        <a href="istorie.html#contact" data-i18n="contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="currentYear">2024</span> 
+                    <span data-i18n="mining-beginnings">Istoria Mineritului în Brad</span>. 
+                    <span data-i18n="all-rights-reserved">Toate drepturile rezervate</span>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

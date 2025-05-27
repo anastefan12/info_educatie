@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Istoria Mineritului în Brad</title>
+    <meta name="description" content="Galerie foto cu imagini reprezentative din perioada de dezvoltare a mineritului în zona Brad">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>★</text></svg>">
+</head>
+<body>
+    <!-- Background design elements -->
+    <div class="bg-element bg-element-top-right"></div>
+    <div class="bg-element bg-element-bottom-left"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-bg-pattern"></div>
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <div class="brand-icon">
+                        <div class="brand-icon-inner">
+                            <span>★</span>
+                        </div>
+                    </div>
+                    <h1 class="brand-title" data-i18n="site-title">Istoria Mineritului în Brad</h1>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Deschide meniul">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+
+                <!-- Desktop navigation -->
+                <div class="nav-links desktop-nav">
+                    <a href="index.html" class="nav-link" data-i18n="home">Acasă</a>
+                    <a href="istorie.html" class="nav-link" data-i18n="history">Istorie</a>
+                    <a href="galerie.html" class="nav-link active" data-i18n="gallery">Galerie</a>
+                    <div class="settings-dropdown">
+                        <button class="settings-btn" id="settingsBtn" data-i18n="options">Opțiuni</button>
+                        <div class="dropdown-content" id="dropdownContent">
+                            <div class="dropdown-header" data-i18n="settings">Setări</div>
+                            <div class="dropdown-separator"></div>
+                            <div class="dropdown-item">
+                                <div class="dropdown-label">
+                                    <span>🌐</span>
+                                    <span data-i18n="language">Limbă</span>: <span id="currentLang">Română</span>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" id="languageSwitch">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="dropdown-separator"></div>
+                            <div class="dropdown-item">
+                                <div class="dropdown-label">
+                                    <span id="themeIcon">☀️</span>
+                                    <span data-i18n="theme">Temă</span>: <span id="currentTheme">Luminoasă</span>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" id="themeSwitch">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile navigation -->
+                <div class="mobile-nav" id="mobileNav">
+                    <a href="index.html" class="nav-link" data-i18n="home">Acasă</a>
+                    <a href="istorie.html" class="nav-link" data-i18n="history">Istorie</a>
+                    <a href="galerie.html" class="nav-link active" data-i18n="gallery">Galerie</a>
+                    <div class="mobile-settings">
+                        <div class="mobile-settings-title" data-i18n="settings">Setări</div>
+                        <div class="mobile-setting-item">
+                            <span data-i18n="language">Limbă</span>: <span id="mobileLang">Română</span>
+                            <label class="switch">
+                                <input type="checkbox" id="mobileLangSwitch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="mobile-setting-item">
+                            <span data-i18n="theme">Temă</span>: <span id="mobileTheme">Luminoasă</span>
+                            <label class="switch">
+                                <input type="checkbox" id="mobileThemeSwitch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="section-decorations">
+                <div class="section-line section-line-top"></div>
+                <div class="section-line section-line-bottom"></div>
+            </div>
+            <div class="container">
+                <h1 class="page-title">
+                    <span data-i18n="photo-gallery">Galerie Foto</span>
+                    <div class="page-title-underline"></div>
+                </h1>
+                <p class="page-description" data-i18n="gallery-description">
+                    Imagini reprezentative din perioada de dezvoltare a mineritului în zona Brad
+                </p>
+                <a href="index.html" class="btn btn-outline btn-small">
+                    <span>←</span>
+                    <span data-i18n="back-home">Înapoi la Acasă</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Mining Industry Gallery -->
+        <section class="gallery-section">
+            <div class="section-decorations">
+                <div class="section-circle section-circle-1"></div>
+                <div class="section-circle section-circle-2"></div>
+            </div>
+            <div class="container">
+                <h2 class="content-section-title">
+                    <span class="content-section-number">1</span>
+                    <span data-i18n="mining-industry">Industria Minieră</span>
+                </h2>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="gallery-overlay"></div>
+                            <img src="images/istoria-mineritului-brad.webp" alt="Istoria mineritului în Brad - ilustrație istorică" loading="lazy">
+                            <div class="gallery-hover-overlay"></div>
+                        </div>
+                        <h3 data-i18n="brad-gold-mine-70s">Mina de aur Brad, anii '70</h3>
+                        <p data-i18n="brad-gold-mine-description">
+                            Imagine cu intrarea principală în mina de aur din Brad, una dintre cele mai importante exploatări miniere din zonă.
+                        </p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="gallery-overlay"></div>
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=250&fit=crop" alt="Mineri la ieșirea din șut" loading="lazy">
+                            <div class="gallery-hover-overlay"></div>
+                        </div>
+                        <h3 data-i18n="miners-exit-1980">Mineri la ieșirea din șut, 1980</h3>
+                        <p data-i18n="miners-description">
+                            Grup de mineri fotografiați la ieșirea din schimb. Se poate observa echipamentul specific și condițiile de muncă din acea perioadă.
+                        </p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="gallery-overlay"></div>
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&h=250&fit=crop" alt="Utilaje miniere din perioada comunistă" loading="lazy">
+                            <div class="gallery-hover-overlay"></div>
+                        </div>
+                        <h3 data-i18n="mining-equipment-60s">Utilaje miniere, anii '60</h3>
+                        <p data-i18n="equipment-description">
+                            Utilaje folosite în exploatarea minieră din Brad în primele decenii ale perioadei comuniste.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Life Gallery -->
+        <section class="gallery-section alt">
+            <div class="section-bg-elements">
+                <div class="section-bg-circle section-bg-circle-1"></div>
+                <div class="section-bg-circle section-bg-circle-2"></div>
+            </div>
+            <div class="container">
+                <h2 class="content-section-title">
+                    <span class="content-section-number">2</span>
+                    <span data-i18n="daily-life">Viața Cotidiană</span>
+                </h2>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="gallery-overlay"></div>
+                            <img src="https://images.unsplash.com/photo-1516496636080-14ad49752c2f?w=400&h=250&fit=crop" alt="Coadă la alimente în Brad" loading="lazy">
+                            <div class="gallery-hover-overlay"></div>
+                        </div>
+                        <h3 data-i18n="food-queue-80s">Coadă la alimente, anii '80</h3>
+                        <p data-i18n="food-queue-description">
+                            Locuitori din Brad stând la coadă pentru alimente de bază. Imaginea surprinde una dintre realitățile cotidiene ale perioadei de austeritate din anii '80.
+                        </p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="gallery-overlay"></div>
+                            <img src="https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?w=400&h=250&fit=crop" alt="Defilare de 1 Mai în Brad" loading="lazy">
+                            <div class="gallery-hover-overlay"></div>
+                        </div>
+                        <h3 data-i18n="may-parade-1975">Defilare de 1 Mai, 1975</h3>
+                        <p data-i18n="may-parade-description">
+                            Defilare organizată cu ocazia Zilei Internaționale a Muncii. Participarea la astfel de manifestații era obligatorie pentru majoritatea angajaților.
+                        </p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="gallery-overlay"></div>
+                            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=250&fit=crop" alt="Magazin universal din Brad" loading="lazy">
+                            <div class="gallery-hover-overlay"></div>
+                        </div>
+                        <h3 data-i18n="universal-store-70s">Magazinul Universal, anii '70</h3>
+                        <p data-i18n="universal-store-description">
+                            Magazinul Universal din Brad, unul dintre principalele puncte comerciale din oraș în perioada comunistă.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Gallery -->
+        <section class="gallery-section">
+            <div class="section-decorations">
+                <div class="section-circle section-circle-3"></div>
+                <div class="section-circle section-circle-4"></div>
+            </div>
+            <div class="container">
+                <h2 class="content-section-title">
+                    <span class="content-section-number">3</span>
+                    <span data-i18n="socialist-architecture">Arhitectura Socialistă</span>
+                </h2>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="gallery-overlay"></div>
+                            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=250&fit=crop" alt="Blocuri de locuințe din Brad" loading="lazy">
+                            <div class="gallery-hover-overlay"></div>
+                        </div>
+                        <h3 data-i18n="housing-blocks-70s">Blocuri de locuințe, anii '70</h3>
+                        <p data-i18n="housing-blocks-description">
+                            Ansambluri de blocuri construite în perioada de expansiune urbană din anii '70, caracteristice pentru arhitectura socialistă.
+                        </p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="gallery-overlay"></div>
+                            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=400&h=250&fit=crop" alt="Casa de Cultură din Brad" loading="lazy">
+                            <div class="gallery-hover-overlay"></div>
+                        </div>
+                        <h3 data-i18n="culture-house-1978">Casa de Cultură, 1978</h3>
+                        <p data-i18n="culture-house-description">
+                            Casa de Cultură din Brad, construită în stil modernist socialist, a găzduit numeroase evenimente culturale și politice.
+                        </p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">
+                            <div class="gallery-overlay"></div>
+                            <img src="https://images.unsplash.com/photo-1486718448742-163732cd1544?w=400&h=250&fit=crop" alt="Centrul civic din Brad" loading="lazy">
+                            <div class="gallery-hover-overlay"></div>
+                        </div>
+                        <h3 data-i18n="civic-center-80s">Centrul civic, anii '80</h3>
+                        <p data-i18n="civic-center-description">
+                            Vedere panoramică a centrului civic din Brad, reorganizat conform principiilor urbanistice ale epocii comuniste.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contribute Section -->
+        <section class="contribute-section">
+            <div class="contribute-bg-pattern"></div>
+            <div class="container">
+                <h2 class="section-title">
+                    <span data-i18n="contribute-photos">Contribuie cu Fotografii</span>
+                </h2>
+                <p class="contribute-description" data-i18n="contribute-description">
+                    Aveți fotografii sau documente din perioada comunistă în zona Brad? Contribuiți la îmbogățirea acestei galerii și la păstrarea memoriei locale.
+                </p>
+                <a href="istorie.html#contact" class="btn btn-primary contribute-btn">
+                    <span data-i18n="contact-us">Contactează-ne</span>
+                    <span class="btn-notification">●</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Navigation Section -->
+        <section class="page-navigation">
+            <div class="container">
+                <div class="nav-buttons">
+                    <a href="istorie.html" class="btn btn-outline nav-btn">
+                        <span>←</span>
+                        <span data-i18n="history">Istorie</span>
+                    </a>
+                    <a href="index.html" class="btn btn-outline nav-btn">
+                        <span data-i18n="home">Acasă</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg-pattern"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <span class="footer-icon">
+                            <span>★</span>
+                        </span>
+                        <span data-i18n="mining-beginnings">Istoria Mineritului în Brad</span>
+                    </h3>
+                    <p class="footer-description" data-i18n="footer-description">
+                        Un proiect dedicat păstrării și promovării istoriei mineritului și patrimoniului industrial din zona Brad, județul Hunedoara.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-subtitle" data-i18n="quick-navigation">Navigare Rapidă</h3>
+                    <div class="footer-links">
+                        <a href="index.html" data-i18n="home">Acasă</a>
+                        <a href="istorie.html" data-i18n="history">Istorie</a>
+                        <a href="galerie.html" data-i18n="gallery">Galerie</a>
+                        <a href="istorie.html#contact" data-i18n="contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="currentYear">2024</span> 
+                    <span data-i18n="mining-beginnings">Istoria Mineritului în Brad</span>. 
+                    <span data-i18n="all-rights-reserved">Toate drepturile rezervate</span>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
